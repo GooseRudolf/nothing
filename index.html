@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220623144650">
+    <title>Document</title>
+</head>
+<body>
+    <header class="head">
+    <a name="c2"></a>
+    <div class="head_container container">
+        <div class="head_container_logo">
+            <picture><source srcset="img/book.webp" type="image/webp"><img src="img/book.png" alt="" class="head_container_logo_icon"></picture>
+            <div class="head_container_logo_slogan">
+                bibliotechni fond
+            </div>  
+        </div>
+        <div class="head_container_descr">
+            <div class="head_container_descr_title">bibliotechni fond</div>
+            <div class="head_container_descr_descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus hic ea soluta corporis consequuntur deleniti dolore,
+                fugiat debitis nulla? Dolores?
+            </div>
+            <a href="#c" class="head_container_descr_button">
+                try
+            </a>
+        </div>
+    </div>
+    
+</header>
+    
+    <main class="main">
+    <section class="instuction">
+        <div class="instuction_container container">
+        <div class="instuction_container_left">
+            <div class="instuction_container_left_title">
+                <strong>Lorem ipsum dolor sit amet consectetur adipisicing.</strong>
+            </div>
+            <div class="instuction_container_left_desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ea corporis porro iste dolores molestiae eos quaerat ex maxime distinctio? Dicta?
+            </div>
+        </div>
+        <div class="instuction_container_right">
+            <div class="instuction_container_right_img">
+                <picture><source srcset="img/img_section1.webp" type="image/webp"><img src="img/img_section1.jpg" alt=""></picture>
+            </div>
+        </div>
+    </div>
+    </section>
+    <a name="c"></a>
+   
+    <section class="capabilities">
+        <div class="capabilities_container container">
+            <div class="capabilities_container_title">Capabilities</div>
+            <div class="capabilities_container_elements">
+                <div class="capabilities_container_elements_select">
+                    <select name="selectmain" id="SelectMain">
+                        <option value="1" selected>Читатели с задаными характеристиками</option>
+                        <option value="2">Читатели,у которых находится указанное произведение</option>
+                        <option value="3">Читатели,у которых находится указанное издание </option>
+                        <option value="4">Читатели, которые в течение времени получали издание с произведением</option>
+                        <option value="5">Издания,которые в течение времени получал читатель из фонда библиотеки, где он зарегистрирован</option>
+                        <option value="6">Издания,которые в течение времени пользовался читатель из фонда библиотеки, где он зарегистрирован</option>
+                        <option value="7">Литература,которая в настоящий момент выдана с определенной полки некоторой библиотеки.</option>
+                        <option value="8">Читателеи, которые в течение периода были обслужены библиотекарем.</option>
+                        <option value="9">Данные о выработке библиотекарей </option>
+                        <option value="10">Читателеи с просроченным сроком литературы</option>
+                        <option value="11">Литература, которая поступила (была списана) в течение некоторого периода.</option>
+                        <option value="12">Библиотекареи,работающие в указанном читальном зале библиотеки.</option>
+                        <option value="13">Читателеи, не посещавшие библиотеку в течение времени</option>
+                        <option value="14">список инвентарных номеров и названий из библиотечного фонда, в которых содержится указанное произведение</option>
+                        <option value="15">инвентарных номеров и названий из библиотечного фонда, в которых содержатся произведения указанного автора</option>
+                        <option value="16">список самых популярных произведений</option>
+                    </select>
+                </div>
+
+                <div class="capabilities_container_elements_forms">
+
+                    <form action="" method="post" id="form1">
+                        <legend>Читатели с задаными характеристиками</legend>
+                        <select name="select" id="SelectFirst">
+                            <option value="1" selected>Студент</option>
+                            <option value="2">Научный работник</option>
+                        </select>
+                        <input type="text" placeholder="Учебное заведение" id="input1first">
+                        <input type="text" placeholder="Факультет" id="input1second">
+                        <button type="submit">Generation</button>
+                    </form>
+
+                    <form action="" method="post" id="form2" class="dispnone">
+                        <legend>Читатели,у которых находится указанное произведение</legend>
+                        <input type="text" placeholder="произведение">
+                        <button type="submit">Generation</button>
+                    </form>
+
+                    <form action="" method="post" id="form3" class="dispnone">
+                        <legend>Читатели,у которых находится указанное издание</legend>
+                        <input type="text" placeholder="Издание">
+                        <button type="submit">Generation</button>
+                    </form>
+
+                    <form action="" method="post" id="form4" class="dispnone">
+                        <legend>Читатели, которые в течение времени получали издание с произведением</legend>
+                        <label for="dat">Start date:</label>
+                        <input type="date" placeholder="izdanie" id="dat">
+                        <label for="dat2">Finish date:</label>
+                        <input type="date" placeholder="izdanie" id="dat2">
+                        <button type="submit">Generation</button>
+                    </form>
+                    <form action="" method="post" id="form5" class="dispnone">
+                        <legend>Издания,которые в течение времени получал читатель из фонда библиотеки, где он зарегистрирован</legend>
+                        <button type="submit">Generation</button>
+                    </form>
+                    <form action="" method="post" id="form6" class="dispnone">
+                        <legend>Издания,которые в течение времени пользовался читатель из фонда библиотеки, где он зарегистрирован</legend>
+                        <button type="submit">Generation</button>
+                    </form>
+                    <form action="" method="post" id="form7" class="dispnone">
+                        <legend>Литература,которая в настоящий момент выдана с определенной полки некоторой библиотеки.</legend>
+                        <button type="submit">Generation</button>
+                    </form>
+                    <form action="" method="post" id="form8" class="dispnone">
+                        <legend>Читателеи, которые в течение периода были обслужены библиотекарем.</legend>
+                        <button type="submit">Generation</button>
+                    </form>
+                    <form action="" method="post" id="form9" class="dispnone">
+                        <legend>Данные о выработке библиотекарей </legend>
+                        <button type="submit">Generation</button>
+                    </form>
+                    <form action="" method="post" id="form10" class="dispnone">
+                        <legend>Читателеи с просроченным сроком литературы</legend>
+                        <button type="submit">Generation</button>
+                    </form>
+                    <form action="" method="post" id="form11" class="dispnone">
+                        <legend>Литература, которая поступила (была списана) в течение некоторого периода.</legend>
+                        <button type="submit">Generation</button>
+                    </form>
+                    <form action="" method="post" id="form12" class="dispnone">
+                        <legend>Библиотекареи,работающие в указанном читальном зале библиотеки.</legend>
+                        <button type="submit">Generation</button>
+                    </form>
+                    <form action="" method="post" id="form13" class="dispnone">
+                        <legend>Читателеи, не посещавшие библиотеку в течение времени</legend>
+                        <button type="submit">Generation</button>
+                    </form>
+                    <form action="" method="post" id="form14" class="dispnone">
+                        <legend>список инвентарных номеров и названий из библиотечного фонда, в которых содержится указанное произведение</legend>
+                        <button type="submit">Generation</button>
+                    </form>
+                    <form action="" method="post" id="form15" class="dispnone">
+                        <legend>инвентарных номеров и названий из библиотечного фонда, в которых содержатся произведения указанного автора</legend>
+                        <button type="submit">Generation</button>
+                    </form>
+                    <form action="" method="post" id="form16" class="dispnone">
+                        <legend>список самых популярных произведений</legend>
+                        <button type="submit">Generation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+    <footer class="footer">
+    <div class="footer_container container">
+        <div class="footer_container_left">bibliotechni fond</div>
+        <div class="footer_container_right">
+            <a href="#c2" class="footer_container_right_a">up |</a>
+        </div>
+    </div>
+</footer>
+    <script src="js/app.min.js?_v=20220623144650"></script>
+</body>
+</html>
